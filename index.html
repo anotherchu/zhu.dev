@@ -1,9 +1,89 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
-    <body>
-        <p> I am Chu </p>
-        <center><i class="fab fa-github"></i> <i class="fab fa-spotify"></i>
-    </body>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="centered-wrapper">
+    <div class="centered-content">
+      <em class="gradient" style="font-size: 72px">zhu.dev</em>
+      <br />
+      <a
+        style="font-size: px; color: #6e5494; text-decoration: none"
+        href="https://github.com/thiag0mei"
+        ><i style="font-size: 20px" class="fab fa-github"></i
+      ></a>
+      <a
+        style="font-size: 14px; color: #1cd464; text-decoration: none"
+        href="https://open.spotify.com/user/12174690956"
+        ><i style="font-size: 20px" class="fab fa-spotify"></i
+      ></a>
+    </div>
+  </body>
+  <style>
+    .gradient {
+      background: #7f30cf;
+      background: -webkit-repeating-radial-gradient(
+        circle farthest-corner at center center,
+        #7f30cf 0%,
+        #4dc6cf 100%
+      );
+      background: -moz-repeating-radial-gradient(
+        circle farthest-corner at center center,
+        #7f30cf 0%,
+        #4dc6cf 100%
+      );
+      background: repeating-radial-gradient(
+        circle farthest-corner at center center,
+        #7f30cf 0%,
+        #4dc6cf 100%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .centered-wrapper {
+      position: relative;
+      text-align: center;
+    }
+    .centered-wrapper:before {
+      content: "";
+      position: relative;
+      display: inline-block;
+      width: 0;
+      height: 100%;
+      vertical-align: middle;
+    }
+    .centered-content {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+    }
+
+    body {
+      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+  </style>
 </html>
